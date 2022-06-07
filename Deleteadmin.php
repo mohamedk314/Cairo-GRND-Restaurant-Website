@@ -43,20 +43,25 @@ if(isset($_POST['save'])){
 </thead>
 <?php
  
-while($row = mysqli_fetch_array($result)) 
+while($row=mysqli_fetch_array($result)) 
+
 {
-    
+	
+
+
 ?>
 <tr>
   
-	<td><?= $row['Id']; ?></td>
+	<td><?= $row['ID']; ?></td>
 	<td><?= $row['First Name']; ?></td>
 	<td><?=  $row['Email']; ?></td>
 	<td><?= $row['Age']; ?></td>
     <td><input type="checkbox" id="checkItem" name="check[]" value="<?php echo $row["Id"]; ?>"></td>
-	 
-</tr>
-<?php
+	
+	
+	</tr>
+
+	<?php
  
 }
 ?>
