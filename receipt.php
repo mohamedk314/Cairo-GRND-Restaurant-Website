@@ -182,7 +182,7 @@
 					</tr>
 						
 				</table>
-				<button style="margin-top:5px;" type="button" class="btn btn-success" onclick="window.location.href='ordertest.php'" >place order</button>
+				<button style="margin-top:5px;" type="button" class="btn btn-success" onclick="window.location.href='placingorder.php'" >place order</button>
 				<button style="margin-top:5px;" type="button" class="btn btn-danger" onclick="window.location.href='cancelorder.php'" >cancel order</button>
 			</div>
 </div>
