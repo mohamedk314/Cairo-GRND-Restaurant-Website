@@ -1,0 +1,29 @@
+body,html{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+width: 100%;
+height: 100%;
+
+}
+
+.section
+{
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+background-image: url(image6.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+
+}
