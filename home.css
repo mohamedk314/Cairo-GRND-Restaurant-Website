@@ -16,6 +16,7 @@ position: relative;
 background-image: url(image6.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+animation: slide 10s infinite;
 }
 .content
 {
@@ -27,3 +28,33 @@ background-size: cover;
     text-align: center;
 
 }
+
+.content h1{
+    color :white;
+    font-size :60px;
+    letter-spacing:16px;
+    }
+    .content a{
+    background: black;
+    padding:10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size:25px;
+     border-radius:20px; 
+    }
+    p{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 24px;
+    } 
+    @keyframes slide{
+    0%{
+    background-image: url(image6.jpg)
+    }
+    33%{
+    background-image: url(image1.jpg)
+    }
+    /* 67%{
+    background-image: url(image3.jpg  )
+    } */
+    } 
