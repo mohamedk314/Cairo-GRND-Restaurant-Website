@@ -1,6 +1,6 @@
 <style>
 table, th, td {
-border: 1px solid black;
+  border: 1px solid black;
 }
 
 </style>
@@ -15,11 +15,11 @@ $query = "SELECT * FROM user WHERE role='cashier'";
 $result = mysqli_query($conn,$query);
 if(isset($_POST['save']))
 {
-    $promote_ID=$_POST['check'];
-    $Promoted_ID=implode(',',$promote_ID);
-    $qr="quality control";
-    $sql="UPDATE user set role='$qr' WHERE ID='".$Promoted_ID."'";
-		
+    $promote_id=$_POST['check'];
+    $Promoted_id=implode(',',$promote_id);
+    $QualityRole="quality control";
+    //	$sql="UPDATE user set role='quality control' WHERE role='cashier'";
+	$sql="UPDATE user set role='$QualityRole' WHERE id='".$Promoted_id."'";
 	
     mysqli_query($conn,$sql);
 }
@@ -28,7 +28,7 @@ if(isset($_POST['save']))
 <html>
 	<header>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</header>
+</header
 <form method="post" action="">
 <table align="center" class="table table-dark">
 <thead>
@@ -54,7 +54,6 @@ while($row = mysqli_fetch_array($result))
 
 <td><?= $row['firstname']; ?></td>
 
-
     <td><?= $row['gender']; ?></td>
     <td><?=  $row['email']; ?></td>
     <td><?= $row['phone number']; ?></td>
@@ -71,4 +70,5 @@ while($row = mysqli_fetch_array($result))
 </form>
 
 </body>
+</html>
 </html>
