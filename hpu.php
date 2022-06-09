@@ -164,31 +164,37 @@ $user = $_SESSION['Username'];
           <li><a href=""> <?php echo $user ?> </a> </li>
         </ul>
       </nav>
+  
   <section id="Drinks">
     <h1>Drinks</h1>
     <p class="talk"></p>
     <button class="button" type="button" onclick="window.location.href='menudrinks.php'">Order!</button>
   </section>
+  
   <section id="Breakfast">
       <h1>Breakfast</h1>
       <p class="talk"></p>
       <button class="button" type="button" onclick="window.location.href='menubreakfast.php'">Order!</button>
   </section>
+  
   <section id="Lunch">
       <h1>Lunch</h1>
       <p class="talk"></p>
       <button class="button" type="button" onclick="window.location.href='menulunch.php'">Order!</button>
   </section>
+  
   <section id="Dinner">
       <h1>Dinner</h1>
       <p class="talk"></p>
       <button class="button" type="button" onclick="window.location.href='menudinner.php'">Order!</button>
   </section>
+  
   <section id="ComposeaSandwitch">
       <h1>Compose a Sandwitch</h1>
       <p class="talk"></p>
       <button class="button" type="button"  onclick="window.location.href='compose.php'">Compose</button>
   </section>
+  
 </div>
 </body>
 </html>
