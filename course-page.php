@@ -14,6 +14,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<header>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</header>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
@@ -52,8 +55,8 @@
 </head>
   
 <body>
-    <h2>Courses Table</h2>
-    <table>
+    <h2 align="center">Courses Table</h2> 
+    <table align="center" class="table table-dark">
         <!-- TABLE TOP ROW HEADINGS-->
         <tr>
             <th>Name</th>
