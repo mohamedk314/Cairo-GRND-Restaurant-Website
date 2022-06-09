@@ -252,7 +252,7 @@ document.getElementById("s").innerHTML = s;
 					</tr>
 <center>
 <div>
-  <button class="button" type="submit" onclick="window.location.href='hpu.php'">skip timer</button>
+  <button class="button" type="submit" onclick="window.location.href='ordertest.php'">skip timer</button>
   <button class="button" type="submit" onclick="window.location.href='hpu.php'">change order</button>
   <button type="button" class="button" onclick="window.location.href='receipt.php'">Cancel order!</button>
   
