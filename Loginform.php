@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <meta name="viewport" content=
             "width=device-width, initial-scale=1">
     <link rel="stylesheet" href=
@@ -17,9 +18,11 @@
     <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
+
 <html >
 
 <style>
+
 body{
  margin: 0;
  padding: 0;
@@ -42,6 +45,7 @@ body{
 .Header{
  margin: auto;
  width: 90%;
+	
  height: 15%;
  display: flex;
  justify-content: space-between;
@@ -55,7 +59,8 @@ body{
  color: #2F3841;
 }
 
-input[type=text], [type=password] {
+input[type=text], [type=password]
+	{
   font-size: medium;
   width: 90%;
   padding: 12px 20px;
@@ -64,6 +69,7 @@ input[type=text], [type=password] {
   box-sizing: border-box;
 }
 
+	
 label{
   font-size: 14px;
 }
@@ -108,20 +114,50 @@ font-size: medium;
   font-size: medium;
 }
 
-/* .checkbox2 {
+/* .checkbox2
+	{
   position: fixed;
   top: 55%;
   left:55%;
+	
   margin-top: -25px;
   margin-left: -180px;
 } */
+fieldset{
+    margin: -10px 20px;
+}
 
+legend{
+    font-size: medium;
+
+}
+
+input[type=radio]
+{
+    border-radius: 50%;
+    width: 16px;
+	
+  height: 16px;
+
+  /* border: 2px solid #999; */
+  /* transition: 1s all linear; */
+  /* margin-right: 5px; */
+  /* position: relative; */
+
+  /* top: 4px; */
+}
+
+/*
+	input:checked {
+  border: 6px solid black;
+} 
+	*/
 </style>
 
 
 <body>
 
-<form class= Container action="Login.php" method="post">
+<form class= Container action="login.php" method="post">
 <div class=”Header”>
  <h3 class=”Heading”>Login</h3>
  </div>
@@ -129,34 +165,44 @@ font-size: medium;
   <label for="Username"><b>Username</b></label>
   <input type="text" placeholder="Enter Username" name="Username" required>
   <br>  <br>
+	
   <label for="password"><b>Password</b></label>
   <input type="password" placeholder="Enter Password" name="password" required>
   <br>  <br>
-  
+
   <div class= "checkbox">
   <label >
     <input  type="checkbox" checked="checked" name="remember"> Remember me
   </label>
   </div>
+//to make sure it it checked
   <br><br>
-  
+
   <div class="form-check form-check-inline">
   <button class="button" type="submit" id="checked">Login</button>
   <button type="button" class="button">Cancel</button>
   <br>  <br>
+
   <span class=centered1 >Forgot <a href="#">password?</a></span>
 
-  <div class= "form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="user" name="type" value="user" required>
-  <label for="user">User</label>
-  <input class="form-check-input" type="radio" id="cashier" name="type" value="cashier" required>
-  <label for="cashier">Cashier</label>
-  <input class="form-check-input" type="radio" id="control" name="type" value="control" required>
-  <label for="control">Control</label>
- 
+  <fieldset> 
+	  //used to make css codes on a part of the code
+     <legend><b>Select user type:</b></legend>
+	  //used to underline this part
+	  
+    <div class= "form-check form-check-inline">
+    <input class="form-check-input" type="radio" id="user" name="type" value="user" required>
+    <label for="user">User</label>
+    <input class="form-check-input" type="radio" id="cashier" name="type" value="cashier" required>
+    <label for="cashier">Cashier</label>
+    <input class="form-check-input" type="radio" id="control" name="type" value="control" required>
+    <label for="control">Control</label>
+
   </div>
 
+  </fieldset>
   <br><br>
+
   </div>
   
 </form>
@@ -177,17 +223,18 @@ font-size: medium;
                 if ($(this).attr("checked") != "checked") {
                  
                     // Alert message by displaying
+			
                     // error message
                     $("#msg").html(
         "<span class='alert alert-danger' id='error'>"
         + "Please Choose atleast one</span>");
                 }
             }
-			);
+            );
         }
-		);
+        );
     </script>
-	
-</body> 
+
+</body>
 
 </html>
