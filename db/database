@@ -1,0 +1,175 @@
+
+
+
+-- -----------------------------
+ --  
+ -- Table structure for table `compose`  
+ --  
+-- -----------------------------
+
+
+
+
+ CREATE TABLE IF NOT EXISTS `compose` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` varchar(255) NOT NULL,  
+  `image` varchar(255) NOT NULL,  
+  `price` double(10,2) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ; 
+
+
+
+
+-- -----------------------------
+ --  
+ -- Dumping data for table `compose`  
+ --  
+-- -----------------------------
+
+
+ 
+
+ INSERT INTO `compose` ( `name`, `image`, `price`) VALUES  
+ ('bread', 'bread.jpg', 0.59),
+ ('ketchup', 'ketchup.jpg', 0.29),
+ ('mustard', 'mustard.jpg', 0.29),
+ ('mayo', 'mayo.jpg', 0.20),
+ ('salami', 'salami.jpg', 0.99),
+ ('chicken breasts', 'chicken_breasts.jpg', 1.79),
+ ('chicken hamburger', 'chicken_hamburger.jpg', 1.29),
+ ('beaf', 'beaf.jpg', 0.20),
+ ('beef hamburger', 'beef_hamburger.jpg', 0.20),
+ ('chease', 'chease.jpg', 0.20),
+ ('mozzarilla', 'mozzarilla.jpg', 0.20),
+ ('bread', 'bread.jpg', 0.20);
+
+
+
+
+-- -----------------------------
+ --  
+ -- Table structure for table `menubreakfast`  
+ --  
+-- -----------------------------
+
+
+
+ CREATE TABLE IF NOT EXISTS `menubreakfast` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` varchar(255) NOT NULL,  
+  `image` varchar(255) NOT NULL,  
+  `price` double(10,2) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ; 
+
+
+
+-- -----------------------------
+ --  
+ -- Dumping data for table `menubreakfast`  
+ --  
+-- -----------------------------
+
+
+
+
+
+
+
+
+
+-- -----------------------------
+ --  
+ -- Table structure for table `menudrinks`  
+ --  
+-- -----------------------------
+
+
+
+ CREATE TABLE IF NOT EXISTS `menudrinks` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` varchar(255) NOT NULL,  
+  `image` varchar(255) NOT NULL,  
+  `price` double(10,2) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ; 
+
+
+
+-- -----------------------------
+ --  
+ -- Dumping data for table `menudrinks`  
+ --  
+-- -----------------------------
+
+
+
+
+
+
+
+
+
+
+
+-- -----------------------------
+ --  
+ -- Table structure for table `menulunch`  
+ --  
+-- -----------------------------
+
+
+
+ CREATE TABLE IF NOT EXISTS `menulunch` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` varchar(255) NOT NULL,  
+  `image` varchar(255) NOT NULL,  
+  `price` double(10,2) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ; 
+
+
+
+-- -----------------------------
+ --  
+ -- Dumping data for table `menulunch`  
+ --  
+-- -----------------------------
+
+
+
+
+
+
+
+
+
+-- -----------------------------
+ --  
+ -- Table structure for table `users`  
+ --  
+-- -----------------------------
+
+
+ CREATE TABLE IF NOT EXISTS `users` (   
+  `Fullname` TEXT(20) NOT NULL,  
+  `username` varchar(50) NOT NULL,  
+  `email` varchar(100) NOT NULL,
+  `image` varchar(255) NOT NULL, 
+  `ID` varchar(255) NOT NULL, 
+  `password` varchar(50) NOT NULL,  
+  PRIMARY KEY (`username`)  
+ ); 
+
+
+-- -----------------------------
+ --  
+ -- Dumping data for table `users`  
+ --  
+-- -----------------------------
+
+
+
+
+
