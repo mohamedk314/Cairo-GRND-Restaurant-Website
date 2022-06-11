@@ -120,9 +120,9 @@ input[type=button], input[type=submit], input[type=reset], input[type=file] {
  <h3 class=”Heading”>Register</h3>
  </div>
   <label for="Fullname"><b>Fullname</b></label>
-  <input type="text" placeholder="ex. mohamed khaled" name="Fullname"  required /><br>
+  <input type="text" placeholder="ex. DR_EL GAZZAR" name="Fullname"  required /><br>
   <label for="username"><b>Username</b></label>
-  <input type="text"  placeholder="ex. mohamed_k314" name="username"  required /><br>
+  <input type="text"  placeholder="ex. EL_GAZZAR" name="username"  required /><br>
   <label for="email"><b>Email</b></label>
   <input type="text" placeholder="ex. ***@gmail.com" name="email"  required /><br>
   <label for="password"><b>Password</b></label>
