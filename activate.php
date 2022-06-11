@@ -21,5 +21,5 @@
           }
           
           // Go back to course-page.php
-        header('location: course-page.php');
+        header('location: changeState.php');
       ?>
