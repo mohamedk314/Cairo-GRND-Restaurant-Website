@@ -51,7 +51,7 @@ else{
 
 }
 
-  /*  $Username = mysqli_real_escape_string($con,$_POST['Username']);
+    $Username = mysqli_real_escape_string($con,$_POST['Username']);
     $password = mysqli_real_escape_string($con,$_POST['password']);
 
         $sql_query = "select count(*) as cntUser from users where username='".$Username."' and password='".$password."'";
@@ -65,14 +65,14 @@ else{
             header('Location: hpu.php');
         }else{
             echo "Invalid username and password";
-        }*/
+        }
 
 
- //  }
- //  else{
+   }
+  else{
       
- // die ('Error 404 Redirect');
+  die ('Error 404 Redirect');
       
- //  }
+  }
    ?>
    </html>
