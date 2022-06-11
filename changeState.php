@@ -3,12 +3,12 @@
     // Connect to database 
     $con = mysqli_connect("localhost","root","","grndrestraunt");
   
-    // Get all the courses from courses table
+    // Get all the states from state table
     // execute the query 
     // Store the result
     $sql = "SELECT * FROM `userState`";
     $Sql_query = mysqli_query($con,$sql);
-    $All_courses = mysqli_fetch_all($Sql_query,MYSQLI_ASSOC);
+    $iterate = mysqli_fetch_all($Sql_query,MYSQLI_ASSOC);
 ?>
   
 <!DOCTYPE html>
@@ -65,7 +65,7 @@
         </tr>
         <?php
   
-            // Use foreach to access all the courses data
+            // Use foreach to access all the state data
             foreach ($iterate as $state) { ?>
             <tr>
                 <td><?php echo $state['username']; ?></td>
