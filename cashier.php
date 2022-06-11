@@ -177,9 +177,9 @@ foreach($result as $data){
       <td><?php echo $order_username ?></td>
       <td><?php echo "$" .$total ?></td>
       <td><a href="cashier.php?action=delete & order_id=<?php echo $data["order_id"]; ?>"><span class="text-danger">Remove</span></a></td> <?php //Action ?>
-      <td><?php echo "$" .$total ?></td> <?php //view ?>
+      <td><a href="cashier_rec.php? action1=cashout & order_id=<?php echo $data["order_id"]; ?>&total=<?php echo $total;?>"><span class="text-green">Cashout !</span></a></td> <?php //Action ?>
   </tr>
-</tbody>
+
               <?php
             $order_id = NULL;
 
@@ -190,5 +190,13 @@ foreach($result as $data){
 
 
     }
+    else {
+
+        ?>
+
+        <th scope ="row"> There is no orders for now </th>
+        <?php
+    }
 ?>
 </table >
+</tbody>
