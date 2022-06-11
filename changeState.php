@@ -55,7 +55,7 @@
 </head>
   
 <body>
-    <h2 align="center">Courses Table</h2> 
+    <h2 align="center">State Table</h2> 
     <table align="center" class="table table-dark">
         <!-- TABLE TOP ROW HEADINGS-->
         <tr>
@@ -66,15 +66,15 @@
         <?php
   
             // Use foreach to access all the courses data
-            foreach ($All_courses as $course) { ?>
+            foreach ($iterate as $state) { ?>
             <tr>
-                <td><?php echo $course['username']; ?></td>
+                <td><?php echo $state['username']; ?></td>
                 <td><?php 
                         // Usage of if-else statement to translate the 
                         // tinyint status value into some common terms
                         // 0-Inactive
                         // 1-Active
-                        if($course['status']=="1") 
+                        if($state['status']=="1") 
                             echo "Active";
                         else 
                             echo "Inactive";
@@ -82,9 +82,9 @@
                 </td>
                 <td>
                     <?php 
-                    if($course['status']=="1") 
+                    if($state['status']=="1") 
   
-                        // if a course is active i.e. status is 1 
+                        // if a state is active i.e. status is 1 
                         // the toggle button must be able to deactivate 
                         // we echo the hyperlink to the page "deactivate.php"
                         // in order to make it look like a button
@@ -92,10 +92,10 @@
                         // red-deactivate
                         // green- activate
                         echo 
-							"<a href=deactivate.php?id=".$course['id']." class='btn red'>Deactivate</a>";
+							"<a href=deactivate.php?id=".$state['id']." class='btn red'>Deactivate</a>";
                     else 
                         echo 
-							"<a href=activate.php?id=".$course['id']." class='btn green'>Activate</a>";
+							"<a href=activate.php?id=".$state['id']." class='btn green'>Activate</a>";
                     ?>
             </tr>
            <?php
