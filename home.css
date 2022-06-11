@@ -52,7 +52,7 @@ animation: slide 10s infinite;
     0%{
     background-image: url(image6.jpg)
     }
-    33%{
+    50%{
     background-image: url(image1.jpg)
     }
 }
