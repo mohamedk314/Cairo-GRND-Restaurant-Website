@@ -97,7 +97,7 @@ if(isset($_GET["action"]))
     <h6 style="color: black;
   font-size: 60px;
   position: fixed;
-  left: 35%;">Compose a sandwitch</h6><br />
+  left: 35%;">Compose a sandwich</h6><br />
 	<body>
 		<br />
         
@@ -140,8 +140,11 @@ if(isset($_GET["action"]))
 					</div>
                     
 				</form>
+				
 			</div>
-           
+			<br />
+			<br />
+			<br />
 		<?php
 					}
 				}
@@ -214,4 +217,3 @@ if(isset($_GET["action"]))
 	<br />
 	</body>
 </html>
-
