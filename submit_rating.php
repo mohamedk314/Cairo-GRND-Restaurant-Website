@@ -1,5 +1,7 @@
 <?php
-$connect = new PDO("mysql:host=localhost;dbname=grndrestraunt", "root", "");
+session_start();
+$user_name = 
+$connect = new PDO("mysql:host=localhost;dbname=grndresturant", "root", "");
 if(isset($_POST["rating_data"]))
 {
 
