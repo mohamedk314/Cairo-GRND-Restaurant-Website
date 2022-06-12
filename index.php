@@ -14,6 +14,7 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
 		echo "<script>alert('Comment added successfully.')</script>";
+		header('Location: indexRating.php');
 	} else {
 		echo "<script>alert('couldn't add this comment.')</script>";
 	}
@@ -52,25 +53,7 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 			</div>
 		</form>
 		<div class="prev-comments">
-			<?php 
-			
-			$sql = "SELECT * FROM comments";
-			$result = mysqli_query($conn, $sql);
-			if (mysqli_num_rows($result) > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-
-			?>
-			<div class="single-item">
-				<h4><?php echo $row['name']; ?></h4>
-				<a href="mailto:<?php echo $row['email']; ?>"><?php echo $row['email']; ?></a>
-				<p><?php echo $row['comment']; ?></p>
-			</div>
-			<?php
-
-				}
-			}
-			
-			?>	
+	
 		</div>
 	</div>
 </body>
