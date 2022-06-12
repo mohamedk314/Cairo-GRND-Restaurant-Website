@@ -163,13 +163,14 @@
 					</tr>
 					<?php
 							$total_compose = $total_compose + ($values["item_quantity"] * $values["item_price"]);
-                            $_SESSION['total_price_compose'] = $total_compose;
+                            
 						}
 					?>
 
                     <?php
 							
 						}
+						$_SESSION['total_price_compose'] = $total_compose;
 						
 						$total_receipt = $_SESSION['total_price_compose'] + $_SESSION['total_price_drinks'] + $_SESSION['total_price_lunch'] + $_SESSION['total_price_breakfast'] + $_SESSION['total_price_dinner'];
 						$_SESSION['total_price_receipt'] = $total_receipt;
