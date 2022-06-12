@@ -170,8 +170,9 @@
                     <?php
 							
 						}
-                        $total_receipt = $total_compose + $total_drinks + $total_lunch + $total_breakfast + $total_dinner;
-                            $_SESSION['total_price_receipt'] = $total_receipt;
+						
+						$total_receipt = $_SESSION['total_price_compose'] + $_SESSION['total_price_drinks'] + $_SESSION['total_price_lunch'] + $_SESSION['total_price_breakfast'] + $_SESSION['total_price_dinner'];
+						$_SESSION['total_price_receipt'] = $total_receipt;
 					?>
 <?php /*--------------------------------------------------          total                  --------------------------------------------------------------*/ ?>
 					
