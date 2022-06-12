@@ -1,7 +1,7 @@
 <?php
   
     // Connect to database 
-    $con = mysqli_connect("localhost","root","","grndrestraunt");
+    $con = mysqli_connect("localhost","root","","grndresturant");
   
     // Get all the states from state table
     // execute the query 
