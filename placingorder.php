@@ -111,7 +111,7 @@ document.getElementById("s").innerHTML = s;
 						<th width="40%">Item Name</th>
 						<th width="10%">Quantity</th>
 						<th width="20%">Price</th>
-						<th width="15%">Total</th>
+						<th width="20%">Total</th>
 						<th width="5%">Action</th>
 					</tr>
 
@@ -124,7 +124,7 @@ document.getElementById("s").innerHTML = s;
 					if(!empty($_SESSION["drinks_cart"]))
 					{
                         ?>
-                        
+
                         <tr>
 						<th width="70%" style = "color : red  ;  font-size: 20px;;">Drinks order</th>
 					</tr>
@@ -293,7 +293,7 @@ document.getElementById("s").innerHTML = s;
 							
 						}
 
-                        $total_receipt = $total_compose + $total_drinks + $total_lunch + $total_breakfast + $total_dinner;
+                        $total_receipt = $_SESSION['total_price_compose'] + $_SESSION['total_price_drinks'] + $_SESSION['total_price_lunch'] + $_SESSION['total_price_breakfast'] + $_SESSION['total_price_dinner'];
                             $_SESSION['total_price_receipt'] = $total_receipt;
 
 					?>
