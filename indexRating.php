@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-    	<h1 class="mt-5 mb-5">Review & Rating System in PHP & Mysql using Ajax</h1>
+    	<h1 class="mt-5 mb-5">Please Rate our Service</h1>
     	<div class="card">
     		<div class="card-header">Sample Product</div>
     		<div class="card-body">
@@ -75,6 +75,10 @@
     				<div class="col-sm-4 text-center">
     					<h3 class="mt-4 mb-3">Write Review Here</h3>
     					<button type="button" name="add_review" id="add_review" class="btn btn-primary">Review</button>
+                        <h3 class="mt-4 mb-3">Logout Here</h3>
+                        <form method="POST" action="LoginForm.php">
+                  <input type="submit" value="Logout" type="button" name="home" id="home" class="btn btn-primary">
+                        </form>
     				</div>
     			</div>
     		</div>
