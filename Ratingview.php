@@ -25,7 +25,7 @@
     <a class="nav-link active" href="Ratingview.php">rating</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#">statistics</a>
+    <a class="nav-link active" href="promote.php">promotion</a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="changestate.php">activation</a>
