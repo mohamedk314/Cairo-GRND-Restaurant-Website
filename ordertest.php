@@ -160,9 +160,9 @@ if(!empty($_SESSION["drinks_cart"]))
      
      
  }
-
+ $total_order = $_SESSION['total_price_receipt'];
  if(!$Cnt = 0){
-    $query = "INSERT INTO orded_status(order_id , user_username) VALUES ('$number' , '$user_username')";
+    $query = "INSERT INTO orded_status(order_id , user_username , Total) VALUES ('$number' , '$user_username' , '$total_order')";
     if ($conn ->query($query) === TRUE) {
          //echo "New record created succsesfullly";
      }
@@ -170,4 +170,5 @@ if(!empty($_SESSION["drinks_cart"]))
      else{
          //echo "Error" . $query . "<br>" . $conn->error;
      }
+     header('Location: index.php');
  }
